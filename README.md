@@ -1,4 +1,4 @@
-# University Search
+# College stats
 Find your school<br>
 
 ![UniversitySearch](https://user-images.githubusercontent.com/75143561/150051413-a6813cbc-16cc-4211-a71b-660d3345a341.gif)
