@@ -14,10 +14,11 @@ const School = ({ id, name, enrolled, website, womenEnrolledPercent, menGradRate
     return (
         <div className='school'>
             <header className='school-header'>
-                <h4 className='school-name' >{name}</h4>
+                <a href={website} rel='noreferrer' target='_blank' className='detail name-url'>
+                    {name} <FaExternalLinkAlt />
+                </a>
                 {bookmarkIcon}
             </header>
-            <a href={website} rel='noreferrer' target='_blank' className='detail url'><FaExternalLinkAlt /></a>
             <p className='detail enrollment' >Total enrollment: {enrolled}</p>
             <p className='detail' >Percent women enrolled: <span className='bold'>{makePercent(womenEnrolledPercent)}%</span></p>
             <p className='detail' >Graduation rate for men: <span className='bold'>{makePercent(menGradRate)}%</span></p>
